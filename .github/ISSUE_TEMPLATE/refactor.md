@@ -2,8 +2,16 @@
 name: "♻️ Refactor Request"
 about: "코드의 기능 변경 없이 구조나 가독성을 개선합니다."
 title: "[Refactor]: "
-labels: "refactor"
+labels: ":recycle: refactor"
 assignees: ""
+body:
+  - type: input
+    attributes:
+      label: "📆 기한"
+      description: "예상 수정 완료 날짜"
+      placeholder: "2025-01-01"
+    validations:
+      required: true
 ---
 
 ## 🧐 기존 코드의 문제점
