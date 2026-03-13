@@ -40,7 +40,7 @@ public class Game {
     private String category;
 
     @Enumerated(EnumType.STRING)
-    @Column(columnDefinition = "game_status")
+    @Column(length = 20)
     @Builder.Default
     private GameStatus status = GameStatus.PENDING;
 
