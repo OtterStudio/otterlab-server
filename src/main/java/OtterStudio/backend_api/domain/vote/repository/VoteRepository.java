@@ -8,9 +8,9 @@ import java.util.Optional;
 
 public interface VoteRepository extends JpaRepository<Vote, Integer> {
 
-    Optional<Vote> findByUserIdAndGameId(Integer userId, Integer gameId);
+    Optional<Vote> findByUserIdAndGameId(Long userId, Integer gameId);
 
-    boolean existsByUserIdAndGameId(Integer userId, Integer gameId);
+    boolean existsByUserIdAndGameId(Long userId, Integer gameId);
 
     long countByGameIdAndSelectedOption(Integer gameId, SelectedOption selectedOption);
 }
