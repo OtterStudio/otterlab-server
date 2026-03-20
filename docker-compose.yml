@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   # Postgres: main database
-  otter-db:
+  postgres:
     image: postgres:15
     container_name: otter-postgres
     restart: always
@@ -16,7 +16,7 @@ services:
       - ./data/postgres:/var/lib/postgresql/data
 
   # redis: cache database
-  otter-redis:
+  redis:
     image: redis:latest
     container_name: otter-redis
     restart: always
